@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="css.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<title>Erica Leijonflycht</title>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="navigation">
+			<ul>
+				<li>
+					<a class="active" href="contact.html">CONTACT</a>
+				</li>
+				<li>
+					<a href="exhibition.html">EXHIBITIONS</a>
+				</li>
+				<li>
+					<a href="art.html">ART</a>
+				</li>
+				<li>
+					<a href="about.html">ABOUT</a>
+				</li>
+				<li>
+					<a href="index.html">HOME</a>
+				</li>
+			</ul><a class="fa fa-facebook" href="https://www.facebook.com/Leijonflycht-Studio-1939932976221456/?notif_id=1517837732660162&notif_t=page_invite"></a> <a class="fa fa-instagram" href="https://www.instagram.com/erica.leijon/"></a>
+		</div><!--END OF NAVIGATION-->
+		<div id="header">
+			<h1 id="kontakth1">CONTACT</h1>
+		</div><!--END OF HEADER-->
+        
+		<h3>Please fill in the form to inquire about a painting.</h3>
+		<div id="form">
+			<fieldset>
+				<form action="skickad.html" id="myForm" name="myForm">
+					<!--Ingen större funktionalitet bakom submit-knappen. Utan man skickas helt enkelt vidare till en annan sida bara.-->
+					Name: <input name="firstname" type="text"><br>
+					<br>
+					E-mail: <input name="email" type="text"><br>
+					<br>
+					Inquire about painting: <select name="art">
+						<option value="powerwoman">
+							Power Woman
+						</option>
+						<option value="fireeye">
+							Fire Eye
+						</option>
+						<option value="noface">
+							No Face
+						</option>
+						<option value="robotman">
+							Robot Man
+						</option>
+						<option value="other">
+							Other..
+						</option>
+					</select><br>
+					<br>
+					<textarea cols="25" name="meddelande" rows="5">Leave message here..</textarea><br>
+					<br>
+					<input type="submit" value="Submit"> <input onclick="myFunction()" type="button" value="Reset form">
+				</form>
+				<script>
+				                        function myFunction() {
+				                        document.getElementById("myForm").reset();
+				                        }
+				</script> <!--En JS-funktion som gör att formuläret resetar -->
+			</fieldset>
+			<div id="footer">
+				<p>&copy; Erica Leijonflycht</p>
+			</div><!-- END OF FOOTER -->
+		</div><!--END OF WRAPPER -->
+	</div>
+</body>
+</html>
